@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>naku gift vachidoy</title>
+    <style>
+      h1 {
+        font-size: 30px;
+        text-align: center;
+      }
+      .lottery-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      button {
+        margin-top: 10px;
+      }
+      .box {
+        height: 40px;
+        width: 200px;
+        background-color: rgb(245, 245, 50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px;
+      }
+      .lottery-container-sheet{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .winningbox{
+        background-color: green;
+        color: white;
+      }
+      .highlightedbox{
+        border: 5px solid red;
+      }
+      #pickthebutton.hover{
+background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lottery Game</h1>
+    <div class="lottery-container">
+       <div class="lottery-container-sheet" id="lotterycontainersheet">
+      <!-- <div class="box">1.cash</div>
+      <div class="box">2.Toy Car</div>
+      <div class="box">2.Toy Car</div> --> 
+       </div>
+      <h2 id="result"></h2>
+      <button style="background-color: green;color: white;border: none; padding: 10px 20px;cursor: pointer; border-radius: 5px;"onmouseover="this.style.backgroundColor='darkgreen'" id="pick the button">pick a number</button>
+    </div>
+    </div>
+    </body>
+    <script src="script.js"></script>
+  </body>
+</html>
